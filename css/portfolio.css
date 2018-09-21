@@ -1,0 +1,9 @@
+nav li{
+    display: inline-block;
+    padding: 8px;
+    background-color: rgb(253, 238, 222)
+}
+
+nav a{
+    text-decoration: none;
+}
