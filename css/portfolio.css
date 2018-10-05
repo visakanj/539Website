@@ -67,8 +67,13 @@ nav a{
 .btn-alt {
   border: 1px solid #dfe2e5;
   padding: 40px 30px;
+  background-color: #fbfdff;
 }
 
+.testclass {
+    background-image: url("../images/background_img.jpg");
+    background-size: 100%
+}
 
 /* Project Pages */
 div p{
