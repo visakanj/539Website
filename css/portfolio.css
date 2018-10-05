@@ -46,9 +46,9 @@ nav a{
     text-align: center;
 }
 
-#homelinks{
+/* #homelinks{
     font-weight: normal;
-}
+} */
 
 #subheading{
     font-style: italic
@@ -57,6 +57,10 @@ nav a{
 #pagetitle{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+}
+
+.btn-font {
+    font-weight: normal;
 }
 
 .btn {
