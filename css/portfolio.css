@@ -1,3 +1,7 @@
+* {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
 nav li{
     display: inline-block;
     padding: 8px;
@@ -6,4 +10,34 @@ nav li{
 
 nav a{
     text-decoration: none;
+}
+
+#headercaption{
+    font-variant: small-caps;
+    font-weight: lighter;
+}
+
+#homelinks{
+    font-weight: normal;
+}
+
+#subheading{
+    font-style: italic
+}
+
+#pagetitle{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+div p{
+    font-style: italic
+}
+
+h3{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+li{
+    margin: 5px
 }
