@@ -94,6 +94,43 @@ li{
 }
 
 /* ################ */
+@media only screen and (min-width: 200px) {
+    .logo {
+        font-size: 20px;
+        display: block;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex: 1;
+    }
+    nav li{
+        display: block;
+        background-color: blue;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .logo {
+        font-size: 20px;
+        display: block;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex: 1;
+    }
+    nav li{
+        display: block;
+        background-color: yellow;
+    }
+}
+
+
 @media only screen and (min-width: 1000px) {
     .logo {
         font-size: 50px;
@@ -101,49 +138,13 @@ li{
     }
     nav li{
         display: inline-block;
-        /* background-color: green; */
+        background-color: green;
     }
     .header-container{
         display: block;
         flex-direction: row;
         justify-content: space-between;
 }
-}
-
-@media only screen and (max-width: 600px) {
-    .logo {
-        font-size: 20px;
-        display: block;
-    }
-    .flex-container{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        flex: 1;
-    }
-    nav li{
-        display: block;
-        /* background-color: antiquewhite; */
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .logo {
-        font-size: 20px;
-        display: block;
-    }
-    .flex-container{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        flex: 1;
-    }
-    nav li{
-        display: block;
-        background-color: green;
-    }
 }
 
 @media (hover: hover) {
