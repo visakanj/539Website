@@ -92,3 +92,47 @@ h3{
 li{
     margin: 5px
 }
+
+/* ################ */
+@media only screen and (min-width: 1000px) {
+    .logo {
+        font-size: 50px;
+        display: block;
+    }
+    nav li{
+        display: inline-block;
+        /* background-color: green; */
+    }
+    .header-container{
+        display: block;
+        flex-direction: row;
+        justify-content: space-between;
+}
+}
+
+@media only screen and (max-width: 375px) {
+    .logo {
+        font-size: 20px;
+        display: block;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex: 1;
+    }
+    nav li{
+        display: block;
+        background-color: green;
+    }
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    background: orangered;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    color: white;
+  }
+}
