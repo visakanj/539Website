@@ -99,31 +99,31 @@ li{
         font-size: 20px;
         display: block;
     }
-    .flex-container{
+    /* .flex-container{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;
         flex: 1;
-    }
+    } */
     nav li{
         display: block;
         background-color: blue;
     }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 700px) {
     .logo {
         font-size: 20px;
         display: block;
     }
-    .flex-container{
+    /* .flex-container{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;
         flex: 1;
-    }
+    } */
     nav li{
         display: block;
         background-color: yellow;
@@ -144,7 +144,13 @@ li{
         display: block;
         flex-direction: row;
         justify-content: space-between;
-}
+    }
+    /* .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1;
+    } */
 }
 
 @media (hover: hover) {
