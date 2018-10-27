@@ -96,7 +96,7 @@ li{
 /* ################ */
 @media only screen and (min-width: 200px) {
     .logo {
-        font-size: 20px;
+        font-size: 10px;
         display: block;
     }
     /* .flex-container{
@@ -108,7 +108,10 @@ li{
     } */
     nav li{
         display: block;
-        background-color: blue;
+        /* background-color: blue; */
+    }
+    #headercaption {
+        visibility: hidden;
     }
 }
 
@@ -126,7 +129,10 @@ li{
     } */
     nav li{
         display: block;
-        background-color: yellow;
+        /* background-color: yellow; */
+    }
+    #headercaption {
+        visibility: hidden;
     }
 }
 
@@ -138,19 +144,22 @@ li{
     }
     nav li{
         display: inline-block;
-        background-color: green;
+        /* background-color: green; */
     }
     .header-container{
         display: block;
         flex-direction: row;
         justify-content: space-between;
     }
-    /* .flex-container{
+    .flex-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex: 1;
-    } */
+    }
+    #headercaption {
+    visibility: visible;
+    }
 }
 
 @media (hover: hover) {
