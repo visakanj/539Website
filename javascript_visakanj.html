@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <canvas id="draw" width="800" height="500" style="border:2px solid black"></canvas>
+    Visakan's Canvas
+</body>
+
+</html>
+
+<script>
+
+canvas = document.querySelector('#draw');
+const ctx = canvas.getContext('2d');
+var width = canvas.width;
+var height = canvas.height;
+
+window.addEventListener("keydown", doKeyDown, true);
+
+ctx.lineJoin = 'round';
+ctx.lineCap = 'round';
+ctx.lineWidth = 15;
+ctx.strokeStyle = "#000000";
+
+let isDrawing = false;
+let lastX = 0;
+let lastY = 0;
+
+function draw(e) {
+    if (!isDrawing) return;
+
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.lineTo(e.offsetX, e.offsetY);
+    ctx.stroke();
+    [lastX, lastY] = [e.offsetX, e.offsetY];
+};
+
+canvas.addEventListener('mousedown', (e) => {
+    isDrawing = true;
+    [lastX, lastY] = [e.offsetX, e.offsetY];
+});
+
+canvas.addEventListener('mousemove', draw);
+canvas.addEventListener('mouseup', () => isDrawing = false);
+canvas.addEventListener('mouseout', () => isDrawing = false);
+
+function clearCanvas() {
+    canvas.width = canvas.width;
+};
+
+function doKeyDown(e) {
+    // b = 66
+    if (e.keyCode == 66) {
+        ctx.strokeStyle = "#0000FF";
+    };
+    // r = 82
+    if (e.keyCode == 82) {
+        ctx.strokeStyle = "#FF0000";
+    };
+    // g = 71
+    if (e.keyCode == 71) {
+        ctx.strokeStyle = "#00FF00";
+    };
+    // y = 89
+    if (e.keyCode == 89) {
+        ctx.strokeStyle = "#FFFF00";
+    };
+    
+    // space = 32
+    if (e.keyCode == 32) {
+        clearCanvas();
+    };
+
+    // up arrow = 38
+    if (e.keyCode == 38) {
+        ctx.lineWidth += 5;
+    };    
+    // down arrow = 40
+    if (e.keyCode == 40) {
+        ctx.lineWidth -= 5;
+    }
+};
+
+</script>
