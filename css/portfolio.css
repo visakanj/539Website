@@ -135,7 +135,102 @@ li{
     width: 0%;
   }
 
+  /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: rgba(0, 255, 242, 0.041);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid blue;
+    border-radius: 12 px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: rgb(14, 21, 119);
+    color: white;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 18px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
 
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    font-size: 18px;
+    color: white;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: lightyellow;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 60px;
+    text-align: center;
+    color: black;
+    font-size: 36 px;
+    font-weight: bold;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: black;
+  }
+
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {
+        color: black;
+        font-weight: bold;
+        font-size: 24 px;
+}
 
 /* ################ */
 @media only screen and (min-width: 200px) {
