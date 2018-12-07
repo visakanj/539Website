@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: space-between;
     flex: 1;
 }
 
@@ -36,6 +37,15 @@ nav li{
     text-align: center;
 }
 
+.current1 {
+    background-color: rgb(70, 17, 105);
+}
+
+.current2 {
+    color: white;
+    font-weight: bold;
+}
+
 nav a{
     text-decoration: none;
 }
@@ -61,17 +71,20 @@ nav a{
 
 .btn-font {
     font-weight: normal;
+    text-align: center;
 }
 
 .btn {
   border-radius: 5px;
   display: inline-block;
   margin: 0;
+  width: 100 px;
 }
 .btn-alt {
   border: 1px solid #dfe2e5;
-  padding: 40px 30px;
+  padding: 40px;
   background-color: #fbfdff;
+  width: 300 px;
 }
 
 .testclass {
@@ -92,6 +105,37 @@ h3{
 li{
     margin: 5px
 }
+
+#resume_text {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+#more {display: none;}
+
+
+
+    /* The progress container (grey background) */
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+    z-index: 1;
+    top:0;
+    position: fixed;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 8px;
+    background: #c24fcc;
+    width: 0%;
+  }
+
+
 
 /* ################ */
 @media only screen and (min-width: 200px) {
