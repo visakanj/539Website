@@ -12,11 +12,15 @@
 
 <body>
     <header class="header-container">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div> 
+        
         <h1 class="logo"> Visakan Jayakumar. <br /> UX Researcher.</h1>
 
         <nav>
             <ul>
-                <li><a href="index.html"> UX Research </a></li>
+                <li class = "current"><a href="index.html"> UX Research </a></li>
                 <li><a href="product_design.html"> Product Design</a></li>
                 <li><a href="about_me.html">Me</a></li>
                 <li><a href="resume_page.html">Resume</a></li>
@@ -28,7 +32,7 @@
 <!-- First images -->
 <img src = "images/feeding_pump_img1.png" alt = "">
     
-<div>
+<div tabindex = 1>
     <h4>My Responsibilities: </h4>
     <p>Study Design, Protocol Development, UI Development, Participant Recruitment, Moderation, Note-taking, Data Analysis,
     Final Report & Presentation Writing</p>
@@ -64,14 +68,13 @@
 </ol>
 
     <h3>THE CHALLENGE</h3>
-    Select one concept for each of the 3 tested features to move forward with.
-
+    Select one concept for each of the 3 tested features to move forward with<span id="dots">...</span><span id="more">
 
 <h3>
     Methodology
 </h3>
 <!-- Methodology images -->
-<img src="images/feeding_pump_img2.png" alt="reseasrch plan">
+<img src="images/feeding_pump_img2.png" alt="research plan">
 <h4>
     Participants<br />
 </h4>
@@ -218,3 +221,21 @@ Feature 3: Switching display into Night Display<br />
     <li>Conduct 2nd round of Usability for statistical power: 15+/user group</li>
     <li>5-sec Usability test</li>
 </ul>
+</span>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+
+
+</br></br></br></br>
+<footer class = "footer">
+    Thanks for checking me out!
+    
+    </br> Reach out: </br>
+    visakanj@umich.edu
+    </br> (248)123-4567
+
+</footer>
+
+<script src="portfolio.js"></script>
+
+</body>
+</html>

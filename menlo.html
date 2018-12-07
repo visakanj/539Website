@@ -12,11 +12,15 @@
 
 <body>
     <header class="header-container">
+            <div class="progress-container">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>
+        
         <h1 class="logo"> Visakan Jayakumar. <br /> UX Researcher.</h1>
 
         <nav>
             <ul>
-                <li><a href="index.html"> UX Research </a></li>
+                <li class = "current"><a href="index.html"> UX Research </a></li>
                 <li><a href="product_design.html"> Product Design</a></li>
                 <li><a href="about_me.html">Me</a></li>
                 <li><a href="resume_page.html">Resume</a></li>
@@ -29,7 +33,7 @@
 <!-- First images -->
 <img src = "images/menlo_img1.jpg" alt = "">
 <img src="images/menlo_img2.png" alt="">
-<div>
+<div tabindex = 1>
     <h4>My Responsibilities:</h4>
     <p>Protocol Development, Study Moderation, Note-taking, Data Analysis, Final Presentation and Report Writing</p>
     
@@ -64,7 +68,7 @@
     overall financial health. As a result, employees may not be performing as effectively as they could be.
 
     <h4>THE CHALLENGE</h4>
-    Select one concept for each of the 3 tested features to move forward with.
+    Select one concept for each of the 3 tested features to move forward with. <span id="dots">...</span><span id="more">
 
     <img src="images/menlo_img3.png" alt="FOOBB">
 
@@ -286,3 +290,20 @@ What would I do differently?
     <li>Brainstorm ways to increase employee buy-in:
     regardless of how great a product is, users must want to use it, so increasing buy-in and retention could have helped this system </li>
 </ul>
+</span>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+
+
+</br></br></br></br>
+<footer class = "footer">
+    Thanks for checking me out!
+    
+    </br> Reach out: </br>
+    visakanj@umich.edu
+    </br> (248)123-4567
+
+</footer>
+<script src="portfolio.js"></script>
+
+</body>
+</html>
