@@ -42,7 +42,9 @@ a.skip:hover {
   }
 
 .flex-container > div {
-    background-color: rgba(253, 235, 177, 0.123);
+    background-color: white;
+    border-style: solid;
+    border-color: orange;
     width: 400px;
     height: 100 px;
     margin: 10px;
