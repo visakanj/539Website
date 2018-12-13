@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+
     <title>Visakan Jayakumar | UX Researcher | Portfolio</title>
 </head>
-
+<main>
 <body>
+<!-- tab Skip Nav link -->
+<a href="#content" class="skip">Skip to content</a>
+
     <header class="header-container">
             <div class="progress-container">
                     <div class="progress-bar" id="myBar"></div>
@@ -20,7 +24,7 @@
 
         <nav>
             <ul>
-                <li class = "current"><a href="index.html"> UX Research </a></li>
+                <li class = "current1"><a class = "current2" href="index.html"> UX Research </a></li>
                 <li><a href="product_design.html"> Product Design</a></li>
                 <li><a href="about_me.html">Me</a></li>
                 <li><a href="resume_page.html">Resume</a></li>
@@ -31,10 +35,12 @@
 <h2> Menlo Innovations | Ethnography</h2>
 
 <!-- First images -->
-<img src = "images/menlo_img1.jpg" alt = "research photos">
-<img src="images/menlo_img2.png" alt="research photos">
-<div tabindex = 1>
-    <h4>My Responsibilities:</h4>
+<div class = "imgbox">
+<img class = "center-fit" src = "images/menlo_img1.jpg" alt = "research photos">
+<img class = "center-fit" src="images/menlo_img2.png" alt="research photos">
+</div>
+<div id = "content">
+    <h3>My Responsibilities:</h3>
     <p>Protocol Development, Study Moderation, Note-taking, Data Analysis, Final Presentation and Report Writing</p>
     
     <h4>My Role:</h4>
@@ -70,8 +76,9 @@
     <h4>THE CHALLENGE</h4>
     Select one concept for each of the 3 tested features to move forward with. <span id="dots">...</span><span id="more">
 
-    <img src="images/menlo_img3.png" alt="FOOBB">
-
+    <div class = "imgbox">
+    <img class = "center-fit" src="images/menlo_img3.png" alt="FOOBB">
+    </div>
 <h3>
     The Problem
 </h3>
@@ -148,9 +155,11 @@ AFFINITY DIAGRAMMING<br />
 400+ key comments and quotes from interviews were attached to sticky notes:<br />
 Notes were clustered with 5-6 other relevant comments/quotes. Clusters were then grouped (and so on) to form a hierarchy of granular patterns moving upwards to high-level themes.<br />
 
-<img src="images/menlo_img4.jpeg" alt="Sticky Notes">
-<img src="images/menlo_img5.png" alt="Affinity Hierarchy">
-<img src="images/menlo_img6.jpeg" alt="Completed Affinity Diagram">
+<div class = "imgbox">
+<img class = "center-fit" src="images/menlo_img4.jpeg" alt="Sticky Notes">
+<img class = "center-fit" src="images/menlo_img5.png" alt="Affinity Hierarchy">
+<img class = "center-fit" src="images/menlo_img6.jpeg" alt="Completed Affinity Diagram">
+</div>
 <br />
 We constructed the following themes:
 <ul>
@@ -305,5 +314,7 @@ What would I do differently?
 </footer>
 <script src="portfolio.js"></script>
 
+
 </body>
+</main>
 </html>

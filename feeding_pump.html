@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+
     <title>Visakan Jayakumar | UX Researcher | Portfolio</title>
 </head>
-
+<main>
 <body>
+<!-- tab Skip Nav link -->
+<a href="#content" class="skip">Skip to content</a>
+
     <header class="header-container">
         <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
@@ -20,8 +24,8 @@
 
         <nav>
             <ul>
-                <li class = "current"><a href="index.html"> UX Research </a></li>
-                <li><a href="product_design.html"> Product Design</a></li>
+                    <li class = "current1"><a class = "current2" href="index.html"> UX Research </a></li>
+                    <li><a href="product_design.html"> Product Design</a></li>
                 <li><a href="about_me.html">Me</a></li>
                 <li><a href="resume_page.html">Resume</a></li>
             </ul>
@@ -30,10 +34,11 @@
 
 <h2> Feeding Pump UI | UX Research & Usability</h2>
 <!-- First images -->
-<img src = "images/feeding_pump_img1.png" alt = "research photos">
-    
-<div tabindex = 1>
-    <h4>My Responsibilities: </h4>
+<div class = "imgbox">
+    <img class = "center-fit" src = "images/feeding_pump_img1.png" alt = "research photos">
+</div>
+<div id = "content">
+    <h3>My Responsibilities: </h3>
     <p>Study Design, Protocol Development, UI Development, Participant Recruitment, Moderation, Note-taking, Data Analysis,
     Final Report & Presentation Writing</p>
     
@@ -74,7 +79,9 @@
     Methodology
 </h3>
 <!-- Methodology images -->
-<img src="images/feeding_pump_img2.png" alt="research plan">
+<div class = "imgbox">
+<img class = "center-fit" src="images/feeding_pump_img2.png" alt="research plan">
+</div>
 <h4>
     Participants<br />
 </h4>
@@ -103,13 +110,19 @@
     Stimuli<br />
     Feature 1 UI Concepts: Programming different feeding settings<br />
     <!-- D1-A image -->
-    <img src="images/feeding_pump_img3.png" alt="Concept D1-A screenshot"><br />
+    <div class = "imgbox">
+    <img class = "center-fit" src="images/feeding_pump_img3.png" alt="Concept D1-A screenshot"><br />
+    </div> 
     D1-A: adjust each digit by moving underline (1 zero shown)<br />
 
-    <img src="images/feeding_pump_img4.png" alt="Concept D1-B screenshot"><br />
+    <div class = "imgbox">
+    <img class = "center-fit" src="images/feeding_pump_img4.png" alt="Concept D1-B screenshot"><br />
+    </div>
     D1-B: adjust each digit with moving underline (3 zeroes shown)<br />
 
-    <img src="images/feeding_pump_img5.png" alt="Concept D2 screenshot"><br />
+    <div class = "imgbox">
+    <img class = "center-fit" src="images/feeding_pump_img5.png" alt="Concept D2 screenshot"><br />
+    </div>
     D2-A: press and hold to increment by 1, then by 5, then by 10<br />
     D2-B: press and hold to increment by 1 (constant speed)<br />
     D2-C: press and hold to increment by 1 (faster speed)<br />
@@ -122,11 +135,14 @@
     <li>When pressing and holding (D2) the + or - buttons, how fast should the number increment?</li>
 </ol>
     Feature 2 UI Concepts: Navigating to and viewing flush (water) settings<br />
-    
-    <img src="images/feeding_pump_img6.png" alt="Concept F1 screenshot"><br />
+    <div class = "imgbox">
+    <img class = "center-fit" src="images/feeding_pump_img6.png" alt="Concept F1 screenshot"><br />
+    </div>
     F1: Show Flush button on Feeding screen<br />
-
-    <img src="images/feeding_pump_img7.png" alt="Concept F1 (cont.) screenshot"><br />
+    
+    <div class = "imgbox">
+    <img class = "center-fit" src="images/feeding_pump_img7.png" alt="Concept F1 (cont.) screenshot"><br />
+    </div> 
     F1 (cont.): flush button and 5 sec flush information pop-up<br />
 
     Questions:
@@ -136,13 +152,19 @@
 </ol>
     Feature 3 UI Concepts: Switching display into Night Display<br />
 
-    <img src="images/feeding_pump_img8.png" alt="Concept N1 screenshot"><br />
+    <div class = "imgbox">
+    <img class = "center-fit" src="images/feeding_pump_img8.png" alt="Concept N1 screenshot"><br />
+    </div>
     N1: Night Display button on Pause screen, reduced menu on Feeding screen<br />
 
-    <img src="images/feeding_pump_img9.png" alt="Concept N1 (cont.) screenshot"><br />
+    <div class = "imgbox">
+    <img class = "center-fit" src="images/feeding_pump_img9.png" alt="Concept N1 (cont.) screenshot"><br />
+    </div>
     N1 (cont.): reduced menu on Feeding screen<br />
 
-    <img src="images/feeding_pump_img10.png" alt="Concept N2 screenshot"><br />
+    <div class = "imgbox">
+    <img class = "center-fit" src="images/feeding_pump_img10.png" alt="Concept N2 screenshot"><br />
+    </div>
     N2: physical Night Display button on pump's frame, full menu on Feeding screen<br />
 
     Questions:
@@ -237,5 +259,7 @@ Feature 3: Switching display into Night Display<br />
 
 <script src="portfolio.js"></script>
 
+
 </body>
+</main>
 </html>

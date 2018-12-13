@@ -9,8 +9,11 @@
         crossorigin="anonymous">
     <title>Visakan Jayakumar | UX Researcher | Portfolio</title>
 </head>
-
+<main>
 <body>
+<!-- tab Skip Nav link -->
+<a href="#content" class="skip">Skip to content</a>
+
     <header class="header-container">
         <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
@@ -20,8 +23,8 @@
 
         <nav>
             <ul>
-                <li class = "current"><a href="index.html"> UX Research </a></li>
-                <li><a href="product_design.html"> Product Design</a></li>
+                    <li class = "current1"><a class = "current2" href="index.html"> UX Research </a></li>
+                    <li><a href="product_design.html"> Product Design</a></li>
                 <li><a href="about_me.html">Me</a></li>
                 <li><a href="resume_page.html">Resume</a></li>
             </ul>
@@ -31,9 +34,12 @@
     <h2> Self-Injection Device | Qualitative Research & Usability </h2>
 
     <!-- First images -->
-    <img src="images/selfinjection_img1.jpg" alt="research photos">
-<div>   
-    <h4 tabindex = 1>My Responsibilities:</h4>
+    <div class = "imgbox">
+    <img class = "center-fit" src="images/selfinjection_img1.jpg" alt="research photos">
+    </div>
+
+    <div id = "content">   
+    <h3>My Responsibilities:</h3>
     <p>Study Design, Protocol Development, Participant Recruitment, Moderation, Note-taking, Data Analysis, Final Report, Writing</p>
 
     <h4>My Role:</h4>
@@ -116,11 +122,11 @@
 
         <li>push against the skin</li>
     </ul>
-        
-    <img src="images/selfinjection_img3.png" alt="Device 1">
-    <img src="images/selfinjection_img4.jpg" alt="Device 2">
-    <img src="images/selfinjection_img5.png" alt="Device 3"><br />
-
+    <div class = "imgbox"> 
+    <img class = "center-fit" src="images/selfinjection_img3.png" alt="Device 1">
+    <img class = "center-fit" src="images/selfinjection_img4.jpg" alt="Device 2">
+    <img class = "center-fit" src="images/selfinjection_img5.png" alt="Device 3"><br />
+        </div>
 
     Aside from appearance, the devices differed in their methods of activation.
 
@@ -151,8 +157,9 @@
 
 Treatment Needs & Goals<br />
 We used participant experiences to write a visual story about the self-administration process.<br /><br />
-    <img src="images/selfinjection_img6.png" alt="Customer Journey">
-
+<div class = "imgbox">    
+<img class = "center-fit" src="images/selfinjection_img6.png" alt="Customer Journey">
+</div>
 Participants discussed their motivations and goals when self-administering the treatments for their conditions.<br />
 They want to:
 <ul>
@@ -175,17 +182,24 @@ Therefore, we had participants perform injections on a foam pad with each of the
 </ol>
 
 We analyzed the findings and compared the 3 devices using visual frequencies:
-    <img src="images/selfinjection_img7.jpg" alt="Visual Frequencies graph">
+<div class = "imgbox">    
+<img class = "center-fit" src="images/selfinjection_img7.jpg" alt="Visual Frequencies graph">
+</div>
 Size of the circles corresponds to the number of participants who mentioned characteristics related to these attributes.<br /><br />
 
 We had participants rank the 3 devices:
-    <img src="images/selfinjection_img8.jpg" alt="Device Rankings">
+<div class = "imgbox">    
+<img class = "center-fit" src="images/selfinjection_img8.jpg" alt="Device Rankings">
+</div>
 We found that participants with moderate to severe dexterity limitations were more likely to prefer Device #1 due to its easier activation:
-    <img src="images/selfinjection_img9.jpg" alt="Activation results">
-
+    
+<div class = "imgbox">
+    <img class = "center-fit" src="images/selfinjection_img9.jpg" alt="Activation results">
+</div>
 Injection-naïve (those without injection experience) were more likely to prefer Device #1, mainly because it was easier to learn to use, appeared less intimidating, and was easier to activate:
-    <img src="images/selfinjection_img10.jpg" alt="Injection-naive results">
-
+<div class = "imgbox">
+    <img class = "center-fit" src="images/selfinjection_img10.jpg" alt="Injection-naive results">
+</div>
 <h3>Recommendation</h3>
 We found that Device #1 was the ideal choice to move forward with.
 <ul>
@@ -233,4 +247,5 @@ THE CLIENT...
 <script src="portfolio.js"></script>
 
 </body>
+</main>
 </html>
